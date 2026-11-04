@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #FAFAF9;
+    color: #1C1917;
+  }
+
+  /* Hand cursor for all clickable and interactive elements */
+  button,
+  [role="button"],
+  a,
+  select,
+  input[type="range"],
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  summary,
+  label[for] {
+    cursor: pointer;
+  }
+}
+
+@media print {
+  header, footer, nav, button {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+  }
+}
